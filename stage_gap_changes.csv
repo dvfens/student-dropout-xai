@@ -1,0 +1,7 @@
+attribute,metric,gap_S0,gap_S1,gap_S2,change_S0_to_S2,change_CI_low,change_CI_high,real_change
+Gender,TPR,0.268,0.089,0.059,-0.21,-0.269,-0.157,True
+Gender,FPR,0.256,0.086,0.094,-0.163,-0.199,-0.125,True
+Age group,TPR,0.642,0.292,0.249,-0.393,-0.458,-0.325,True
+Age group,FPR,0.574,0.121,0.135,-0.439,-0.525,-0.352,True
+Nationality,TPR,0.062,0.04,0.015,-0.046,-0.197,0.118,False
+Nationality,FPR,0.01,0.052,0.037,0.027,-0.071,0.084,False

@@ -1,0 +1,37 @@
+attribute,metric,highest,lowest,gap,p_perm,p_FDR,significant,stage,p_FDR_all,sig,stage_short
+Gender,flag_rate,Male,Female,0.3264,0.0005,0.0007,True,Stage 0: enrollment,0.0009,True,S0 enrollment
+Gender,TPR,Male,Female,0.2684,0.0005,0.0007,True,Stage 0: enrollment,0.0009,True,S0 enrollment
+Gender,FPR,Male,Female,0.2564,0.0005,0.0007,True,Stage 0: enrollment,0.0009,True,S0 enrollment
+Gender,accuracy,Female,Male,0.1134,0.0005,0.0007,True,Stage 0: enrollment,0.0009,True,S0 enrollment
+Age group,flag_rate,25-29,<=20,0.6779,0.0005,0.0007,True,Stage 0: enrollment,0.0009,True,S0 enrollment
+Age group,TPR,25-29,<=20,0.6423,0.0005,0.0007,True,Stage 0: enrollment,0.0009,True,S0 enrollment
+Age group,FPR,25-29,<=20,0.5736,0.0005,0.0007,True,Stage 0: enrollment,0.0009,True,S0 enrollment
+Age group,accuracy,<=20,25-29,0.1271,0.0005,0.0007,True,Stage 0: enrollment,0.0009,True,S0 enrollment
+Nationality,flag_rate,Portuguese,Non-Portuguese,0.0372,0.4698,0.5955,False,Stage 0: enrollment,0.6264,False,S0 enrollment
+Nationality,TPR,Portuguese,Non-Portuguese,0.0616,0.4963,0.5955,False,Stage 0: enrollment,0.638,False,S0 enrollment
+Nationality,FPR,Portuguese,Non-Portuguese,0.0104,0.8136,0.8876,False,Stage 0: enrollment,0.8678,False,S0 enrollment
+Nationality,accuracy,Portuguese,Non-Portuguese,0.0024,1.0,1.0,False,Stage 0: enrollment,1.0,False,S0 enrollment
+Gender,flag_rate,Male,Female,0.2134,0.0005,0.0009,True,Stage 1: after semester 1,0.0009,True,S1 after sem 1
+Gender,TPR,Male,Female,0.0888,0.0005,0.0009,True,Stage 1: after semester 1,0.0009,True,S1 after sem 1
+Gender,FPR,Male,Female,0.0859,0.0005,0.0009,True,Stage 1: after semester 1,0.0009,True,S1 after sem 1
+Gender,accuracy,Female,Male,0.0541,0.0005,0.0009,True,Stage 1: after semester 1,0.0009,True,S1 after sem 1
+Age group,flag_rate,25-29,<=20,0.4134,0.0005,0.0009,True,Stage 1: after semester 1,0.0009,True,S1 after sem 1
+Age group,TPR,25-29,<=20,0.2921,0.0005,0.0009,True,Stage 1: after semester 1,0.0009,True,S1 after sem 1
+Age group,FPR,25-29,<=20,0.1211,0.0005,0.0009,True,Stage 1: after semester 1,0.0009,True,S1 after sem 1
+Age group,accuracy,<=20,21-24,0.0492,0.044,0.066,False,Stage 1: after semester 1,0.0688,False,S1 after sem 1
+Nationality,flag_rate,Non-Portuguese,Portuguese,0.028,0.5347,0.5952,False,Stage 1: after semester 1,0.6638,False,S1 after sem 1
+Nationality,TPR,Non-Portuguese,Portuguese,0.0397,0.5952,0.5952,False,Stage 1: after semester 1,0.6912,False,S1 after sem 1
+Nationality,FPR,Non-Portuguese,Portuguese,0.0518,0.1349,0.1799,False,Stage 1: after semester 1,0.1943,False,S1 after sem 1
+Nationality,accuracy,Portuguese,Non-Portuguese,0.0199,0.5852,0.5952,False,Stage 1: after semester 1,0.6912,False,S1 after sem 1
+Gender,flag_rate,Male,Female,0.2144,0.0005,0.001,True,Stage 2: after semester 2,0.0009,True,S2 after sem 2
+Gender,TPR,Male,Female,0.0585,0.011,0.0188,True,Stage 2: after semester 2,0.018,True,S2 after sem 2
+Gender,FPR,Male,Female,0.0936,0.0005,0.001,True,Stage 2: after semester 2,0.0009,True,S2 after sem 2
+Gender,accuracy,Female,Male,0.0669,0.0005,0.001,True,Stage 2: after semester 2,0.0009,True,S2 after sem 2
+Age group,flag_rate,25-29,<=20,0.4001,0.0005,0.001,True,Stage 2: after semester 2,0.0009,True,S2 after sem 2
+Age group,TPR,30+,<=20,0.2488,0.0005,0.001,True,Stage 2: after semester 2,0.0009,True,S2 after sem 2
+Age group,FPR,25-29,<=20,0.1346,0.0005,0.001,True,Stage 2: after semester 2,0.0009,True,S2 after sem 2
+Age group,accuracy,30+,21-24,0.0452,0.0585,0.0877,False,Stage 2: after semester 2,0.0877,False,S2 after sem 2
+Nationality,flag_rate,Non-Portuguese,Portuguese,0.0094,0.8196,0.8476,False,Stage 2: after semester 2,0.8678,False,S2 after sem 2
+Nationality,TPR,Non-Portuguese,Portuguese,0.0152,0.8476,0.8476,False,Stage 2: after semester 2,0.8718,False,S2 after sem 2
+Nationality,FPR,Non-Portuguese,Portuguese,0.0371,0.2659,0.3545,False,Stage 2: after semester 2,0.3681,False,S2 after sem 2
+Nationality,accuracy,Portuguese,Non-Portuguese,0.017,0.6742,0.809,False,Stage 2: after semester 2,0.7584,False,S2 after sem 2

@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+backend/.venv/
+.pytest_cache/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+.env
+.env.local
+
+# Local tooling and scratch
+.claude/
+notebook_dump.txt
+AI_Ethics_rewrite.tex
+*.log
+.DS_Store

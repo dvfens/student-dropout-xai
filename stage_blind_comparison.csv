@@ -1,0 +1,7 @@
+stage,variant,AUC,recall,TPR gap | Gender,TPR gap | Age group,TPR gap | Nationality
+S0 enrollment,with sensitive attributes,0.772,0.56,0.268,0.642,0.062
+S0 enrollment,without sensitive attributes,0.763,0.552,0.112,0.504,0.042
+S1 after sem 1,with sensitive attributes,0.906,0.742,0.089,0.292,0.04
+S1 after sem 1,without sensitive attributes,0.906,0.74,0.04,0.252,0.106
+S2 after sem 2,with sensitive attributes,0.926,0.766,0.059,0.249,0.015
+S2 after sem 2,without sensitive attributes,0.925,0.764,0.027,0.227,0.05

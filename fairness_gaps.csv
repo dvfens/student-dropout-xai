@@ -1,0 +1,13 @@
+attribute,metric,highest,lowest,gap,p_perm,p_FDR,significant
+Gender,flag_rate,Male,Female,0.1871,0.0005,0.001,True
+Gender,TPR,Male,Female,0.0422,0.083,0.1106,False
+Gender,FPR,Male,Female,0.0627,0.0005,0.001,True
+Gender,accuracy,Female,Male,0.0638,0.0005,0.001,True
+Age group,flag_rate,25-29,<=20,0.3814,0.0005,0.001,True
+Age group,TPR,30+,<=20,0.2835,0.0005,0.001,True
+Age group,FPR,25-29,<=20,0.0697,0.0005,0.001,True
+Age group,accuracy,30+,21-24,0.0616,0.0025,0.0043,True
+Nationality,flag_rate,Non-Portuguese,Portuguese,0.0414,0.3878,0.4231,False
+Nationality,TPR,Non-Portuguese,Portuguese,0.0796,0.3068,0.3682,False
+Nationality,FPR,Non-Portuguese,Portuguese,0.0552,0.048,0.072,False
+Nationality,accuracy,Portuguese,Non-Portuguese,0.0096,0.7751,0.7751,False
