@@ -1,0 +1,506 @@
+{
+  "categories": [
+    "Personal",
+    "Family background",
+    "Application & prior education",
+    "Economy",
+    "Finance",
+    "Semester 1 results",
+    "Semester 2 results"
+  ],
+  "sensitive_features": [
+    "Age at enrollment",
+    "Gender",
+    "Nationality",
+    "International"
+  ],
+  "stages": [
+    {
+      "stage": 0,
+      "key": "enrollment",
+      "label": "S0 enrollment",
+      "category_shares": {
+        "Personal": 0.3140385402911241,
+        "Family background": 0.14867132686254486,
+        "Application & prior education": 0.33890215255198775,
+        "Economy": 0.07573723703746324,
+        "Finance": 0.12265074325688012,
+        "Semester 1 results": 0.0,
+        "Semester 2 results": 0.0
+      },
+      "sensitive_shares": {
+        "Age at enrollment": 0.19647368410059005,
+        "Gender": 0.08957074276555321,
+        "Nationality": 0.0024143805704244835,
+        "International": 0.0002524136929710864
+      },
+      "all_sensitive": 0.28871122112953884,
+      "top_features": [
+        {
+          "feature": "Age at enrollment",
+          "share": 0.19647368410059005
+        },
+        {
+          "feature": "Scholarship holder",
+          "share": 0.12265074325688012
+        },
+        {
+          "feature": "Course",
+          "share": 0.10159257348978543
+        },
+        {
+          "feature": "Gender",
+          "share": 0.08957074276555321
+        },
+        {
+          "feature": "Application mode",
+          "share": 0.07548794676382971
+        }
+      ],
+      "feature_shares": [
+        {
+          "feature": "Age at enrollment",
+          "share": 0.19647368410059005
+        },
+        {
+          "feature": "Scholarship holder",
+          "share": 0.12265074325688012
+        },
+        {
+          "feature": "Course",
+          "share": 0.10159257348978543
+        },
+        {
+          "feature": "Gender",
+          "share": 0.08957074276555321
+        },
+        {
+          "feature": "Application mode",
+          "share": 0.07548794676382971
+        },
+        {
+          "feature": "Mother's occupation",
+          "share": 0.057625173337714906
+        },
+        {
+          "feature": "Previous qualification (grade)",
+          "share": 0.05103474037854599
+        },
+        {
+          "feature": "Admission grade",
+          "share": 0.04565309094694127
+        },
+        {
+          "feature": "Unemployment rate",
+          "share": 0.04051443266043525
+        },
+        {
+          "feature": "Father's occupation",
+          "share": 0.035321831018459544
+        },
+        {
+          "feature": "Application order",
+          "share": 0.032399105649904274
+        },
+        {
+          "feature": "Mother's qualification",
+          "share": 0.02813319244293903
+        },
+        {
+          "feature": "Father's qualification",
+          "share": 0.02759113006343137
+        },
+        {
+          "feature": "GDP",
+          "share": 0.017921552744427985
+        },
+        {
+          "feature": "Inflation rate",
+          "share": 0.017301251632600007
+        },
+        {
+          "feature": "Previous qualification",
+          "share": 0.017031147612497844
+        },
+        {
+          "feature": "Marital status",
+          "share": 0.015770407957070458
+        },
+        {
+          "feature": "Daytime/evening attendance",
+          "share": 0.015703547710483257
+        },
+        {
+          "feature": "Displaced",
+          "share": 0.008527597504662086
+        },
+        {
+          "feature": "Nationality",
+          "share": 0.0024143805704244835
+        },
+        {
+          "feature": "Educational special needs",
+          "share": 0.0010293136998527391
+        },
+        {
+          "feature": "International",
+          "share": 0.0002524136929710864
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "key": "after_sem1",
+      "label": "S1 after sem 1",
+      "category_shares": {
+        "Personal": 0.14732688274202238,
+        "Family background": 0.07140576963626291,
+        "Application & prior education": 0.13865716243712692,
+        "Economy": 0.07148346461880328,
+        "Finance": 0.16429086497679954,
+        "Semester 1 results": 0.4068358555889847,
+        "Semester 2 results": 0.0
+      },
+      "sensitive_shares": {
+        "Age at enrollment": 0.06511543903505931,
+        "Gender": 0.04601835976840385,
+        "Nationality": 0.001459486370144103,
+        "International": 0.00037343428427569176
+      },
+      "all_sensitive": 0.11296671945788296,
+      "top_features": [
+        {
+          "feature": "Curricular units 1st sem (approved)",
+          "share": 0.22535456082511637
+        },
+        {
+          "feature": "Tuition fees up to date",
+          "share": 0.11573558717620548
+        },
+        {
+          "feature": "Curricular units 1st sem (grade)",
+          "share": 0.06944330328701596
+        },
+        {
+          "feature": "Age at enrollment",
+          "share": 0.06511543903505931
+        },
+        {
+          "feature": "Curricular units 1st sem (enrolled)",
+          "share": 0.06135456342946381
+        }
+      ],
+      "feature_shares": [
+        {
+          "feature": "Curricular units 1st sem (approved)",
+          "share": 0.22535456082511637
+        },
+        {
+          "feature": "Tuition fees up to date",
+          "share": 0.11573558717620548
+        },
+        {
+          "feature": "Curricular units 1st sem (grade)",
+          "share": 0.06944330328701596
+        },
+        {
+          "feature": "Age at enrollment",
+          "share": 0.06511543903505931
+        },
+        {
+          "feature": "Curricular units 1st sem (enrolled)",
+          "share": 0.06135456342946381
+        },
+        {
+          "feature": "Course",
+          "share": 0.05294105581875241
+        },
+        {
+          "feature": "Gender",
+          "share": 0.04601835976840385
+        },
+        {
+          "feature": "Unemployment rate",
+          "share": 0.04162901562334145
+        },
+        {
+          "feature": "Displaced",
+          "share": 0.029441176319091402
+        },
+        {
+          "feature": "Curricular units 1st sem (credited)",
+          "share": 0.028675336134961434
+        },
+        {
+          "feature": "Father's occupation",
+          "share": 0.026203339436365252
+        },
+        {
+          "feature": "Scholarship holder",
+          "share": 0.02501536946520867
+        },
+        {
+          "feature": "Admission grade",
+          "share": 0.024763443799544888
+        },
+        {
+          "feature": "Debtor",
+          "share": 0.023539908335385395
+        },
+        {
+          "feature": "Application mode",
+          "share": 0.022606310268886178
+        },
+        {
+          "feature": "Mother's occupation",
+          "share": 0.022242198663616135
+        },
+        {
+          "feature": "GDP",
+          "share": 0.021567323535132486
+        },
+        {
+          "feature": "Curricular units 1st sem (evaluations)",
+          "share": 0.017579070001582667
+        },
+        {
+          "feature": "Previous qualification (grade)",
+          "share": 0.017348978561902133
+        },
+        {
+          "feature": "Father's qualification",
+          "share": 0.013332535299074705
+        },
+        {
+          "feature": "Application order",
+          "share": 0.01319917853735641
+        },
+        {
+          "feature": "Mother's qualification",
+          "share": 0.009627696237206825
+        },
+        {
+          "feature": "Inflation rate",
+          "share": 0.008287125460329349
+        },
+        {
+          "feature": "Marital status",
+          "share": 0.004748307163891766
+        },
+        {
+          "feature": "Previous qualification",
+          "share": 0.004682227160539902
+        },
+        {
+          "feature": "Curricular units 1st sem (without evaluations)",
+          "share": 0.004429021910844483
+        },
+        {
+          "feature": "Daytime/evening attendance",
+          "share": 0.003115968290144998
+        },
+        {
+          "feature": "Nationality",
+          "share": 0.001459486370144103
+        },
+        {
+          "feature": "International",
+          "share": 0.00037343428427569176
+        },
+        {
+          "feature": "Educational special needs",
+          "share": 0.00017067980115625264
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "key": "after_sem2",
+      "label": "S2 after sem 2",
+      "category_shares": {
+        "Personal": 0.11387671212647055,
+        "Family background": 0.06399617797051367,
+        "Application & prior education": 0.13502095351866916,
+        "Economy": 0.05672692814280271,
+        "Finance": 0.13686279338260923,
+        "Semester 1 results": 0.13993574042940077,
+        "Semester 2 results": 0.35358069442953394
+      },
+      "sensitive_shares": {
+        "Age at enrollment": 0.054028746174155255,
+        "Gender": 0.032089885287599734,
+        "Nationality": 0.0018525160788160637,
+        "International": 0.0002470798063434437
+      },
+      "all_sensitive": 0.08821822734691451,
+      "top_features": [
+        {
+          "feature": "Curricular units 2nd sem (approved)",
+          "share": 0.21401101671927572
+        },
+        {
+          "feature": "Tuition fees up to date",
+          "share": 0.10039577688870713
+        },
+        {
+          "feature": "Curricular units 1st sem (approved)",
+          "share": 0.07257113360486815
+        },
+        {
+          "feature": "Curricular units 2nd sem (grade)",
+          "share": 0.05989818314770771
+        },
+        {
+          "feature": "Age at enrollment",
+          "share": 0.054028746174155255
+        }
+      ],
+      "feature_shares": [
+        {
+          "feature": "Curricular units 2nd sem (approved)",
+          "share": 0.21401101671927572
+        },
+        {
+          "feature": "Tuition fees up to date",
+          "share": 0.10039577688870713
+        },
+        {
+          "feature": "Curricular units 1st sem (approved)",
+          "share": 0.07257113360486815
+        },
+        {
+          "feature": "Curricular units 2nd sem (grade)",
+          "share": 0.05989818314770771
+        },
+        {
+          "feature": "Age at enrollment",
+          "share": 0.054028746174155255
+        },
+        {
+          "feature": "Course",
+          "share": 0.04926369168940446
+        },
+        {
+          "feature": "Curricular units 2nd sem (enrolled)",
+          "share": 0.0409083953050215
+        },
+        {
+          "feature": "Unemployment rate",
+          "share": 0.032954825400234075
+        },
+        {
+          "feature": "Gender",
+          "share": 0.032089885287599734
+        },
+        {
+          "feature": "Admission grade",
+          "share": 0.030152458119449322
+        },
+        {
+          "feature": "Displaced",
+          "share": 0.02296768977050004
+        },
+        {
+          "feature": "Father's occupation",
+          "share": 0.021655957344127414
+        },
+        {
+          "feature": "Curricular units 1st sem (grade)",
+          "share": 0.02121652880949302
+        },
+        {
+          "feature": "Curricular units 2nd sem (evaluations)",
+          "share": 0.02084676322401155
+        },
+        {
+          "feature": "Debtor",
+          "share": 0.020676701217844918
+        },
+        {
+          "feature": "Application mode",
+          "share": 0.020569403765462874
+        },
+        {
+          "feature": "Curricular units 1st sem (enrolled)",
+          "share": 0.019411687354431648
+        },
+        {
+          "feature": "Mother's occupation",
+          "share": 0.01834573960642835
+        },
+        {
+          "feature": "GDP",
+          "share": 0.01680077611364089
+        },
+        {
+          "feature": "Previous qualification (grade)",
+          "share": 0.0163870882030722
+        },
+        {
+          "feature": "Curricular units 2nd sem (credited)",
+          "share": 0.016376429961414182
+        },
+        {
+          "feature": "Scholarship holder",
+          "share": 0.015790315276057183
+        },
+        {
+          "feature": "Application order",
+          "share": 0.014384064115256445
+        },
+        {
+          "feature": "Father's qualification",
+          "share": 0.01201564400229475
+        },
+        {
+          "feature": "Mother's qualification",
+          "share": 0.011978837017663162
+        },
+        {
+          "feature": "Curricular units 1st sem (credited)",
+          "share": 0.01193249056595303
+        },
+        {
+          "feature": "Curricular units 1st sem (evaluations)",
+          "share": 0.009422457764336407
+        },
+        {
+          "feature": "Inflation rate",
+          "share": 0.006971326628927745
+        },
+        {
+          "feature": "Curricular units 1st sem (without evaluations)",
+          "share": 0.005381442330318514
+        },
+        {
+          "feature": "Previous qualification",
+          "share": 0.0028888848663942593
+        },
+        {
+          "feature": "Marital status",
+          "share": 0.0025240623599890478
+        },
+        {
+          "feature": "Nationality",
+          "share": 0.0018525160788160637
+        },
+        {
+          "feature": "Curricular units 2nd sem (without evaluations)",
+          "share": 0.0015399060721032482
+        },
+        {
+          "feature": "Daytime/evening attendance",
+          "share": 0.001375362759629612
+        },
+        {
+          "feature": "International",
+          "share": 0.0002470798063434437
+        },
+        {
+          "feature": "Educational special needs",
+          "share": 0.00016673264906696828
+        }
+      ]
+    }
+  ]
+}

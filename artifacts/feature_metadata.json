@@ -1,0 +1,1844 @@
+{
+  "features": [
+    {
+      "name": "Marital status",
+      "label": "Marital status",
+      "help": "The student's marital status when they enrolled.",
+      "stage": 0,
+      "section": "Personal",
+      "sensitive": false,
+      "type": "categorical",
+      "options": [
+        {
+          "value": 1,
+          "label": "Single",
+          "verified": true
+        },
+        {
+          "value": 2,
+          "label": "Married",
+          "verified": true
+        },
+        {
+          "value": 3,
+          "label": "Widower",
+          "verified": true
+        },
+        {
+          "value": 4,
+          "label": "Divorced",
+          "verified": true
+        },
+        {
+          "value": 5,
+          "label": "Facto union",
+          "verified": true
+        },
+        {
+          "value": 6,
+          "label": "Legally separated",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Application mode",
+      "label": "Application route",
+      "help": "How the student applied, for example the general national access phase, a special quota, a transfer or the over-23 route.",
+      "stage": 0,
+      "section": "Application and prior education",
+      "sensitive": false,
+      "type": "categorical",
+      "options": [
+        {
+          "value": 1,
+          "label": "1st phase - general contingent",
+          "verified": true
+        },
+        {
+          "value": 2,
+          "label": "Ordinance No. 612/93",
+          "verified": true
+        },
+        {
+          "value": 5,
+          "label": "1st phase - special contingent (Azores Island)",
+          "verified": true
+        },
+        {
+          "value": 7,
+          "label": "Holders of other higher courses",
+          "verified": true
+        },
+        {
+          "value": 10,
+          "label": "Ordinance No. 854-B/99",
+          "verified": true
+        },
+        {
+          "value": 15,
+          "label": "International student (bachelor)",
+          "verified": true
+        },
+        {
+          "value": 16,
+          "label": "1st phase - special contingent (Madeira Island)",
+          "verified": true
+        },
+        {
+          "value": 17,
+          "label": "2nd phase - general contingent",
+          "verified": true
+        },
+        {
+          "value": 18,
+          "label": "3rd phase - general contingent",
+          "verified": true
+        },
+        {
+          "value": 26,
+          "label": "Ordinance No. 533-A/99, item b2) (Different Plan)",
+          "verified": true
+        },
+        {
+          "value": 27,
+          "label": "Ordinance No. 533-A/99, item b3 (Other Institution)",
+          "verified": true
+        },
+        {
+          "value": 39,
+          "label": "Over 23 years old",
+          "verified": true
+        },
+        {
+          "value": 42,
+          "label": "Transfer",
+          "verified": true
+        },
+        {
+          "value": 43,
+          "label": "Change of course",
+          "verified": true
+        },
+        {
+          "value": 44,
+          "label": "Technological specialization diploma holders",
+          "verified": true
+        },
+        {
+          "value": 51,
+          "label": "Change of institution/course",
+          "verified": true
+        },
+        {
+          "value": 53,
+          "label": "Short cycle diploma holders",
+          "verified": true
+        },
+        {
+          "value": 57,
+          "label": "Change of institution/course (International)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Application order",
+      "label": "Application preference",
+      "help": "Where this course was in the student's list of choices: 0 = first choice, 9 = last choice.",
+      "stage": 0,
+      "section": "Application and prior education",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 0,
+      "max": 9,
+      "median": 1.0,
+      "integer": true,
+      "step": 1
+    },
+    {
+      "name": "Course",
+      "label": "Course (degree programme)",
+      "help": "The degree programme the student enrolled in.",
+      "stage": 0,
+      "section": "Application and prior education",
+      "sensitive": false,
+      "type": "categorical",
+      "options": [
+        {
+          "value": 33,
+          "label": "Biofuel Production Technologies",
+          "verified": true
+        },
+        {
+          "value": 171,
+          "label": "Animation and Multimedia Design",
+          "verified": true
+        },
+        {
+          "value": 8014,
+          "label": "Social Service (evening attendance)",
+          "verified": true
+        },
+        {
+          "value": 9003,
+          "label": "Agronomy",
+          "verified": true
+        },
+        {
+          "value": 9070,
+          "label": "Communication Design",
+          "verified": true
+        },
+        {
+          "value": 9085,
+          "label": "Veterinary Nursing",
+          "verified": true
+        },
+        {
+          "value": 9119,
+          "label": "Informatics Engineering",
+          "verified": true
+        },
+        {
+          "value": 9130,
+          "label": "Equinculture",
+          "verified": true
+        },
+        {
+          "value": 9147,
+          "label": "Management",
+          "verified": true
+        },
+        {
+          "value": 9238,
+          "label": "Social Service",
+          "verified": true
+        },
+        {
+          "value": 9254,
+          "label": "Tourism",
+          "verified": true
+        },
+        {
+          "value": 9500,
+          "label": "Nursing",
+          "verified": true
+        },
+        {
+          "value": 9556,
+          "label": "Oral Hygiene",
+          "verified": true
+        },
+        {
+          "value": 9670,
+          "label": "Advertising and Marketing Management",
+          "verified": true
+        },
+        {
+          "value": 9773,
+          "label": "Journalism and Communication",
+          "verified": true
+        },
+        {
+          "value": 9853,
+          "label": "Basic Education",
+          "verified": true
+        },
+        {
+          "value": 9991,
+          "label": "Management (evening attendance)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Daytime/evening attendance",
+      "label": "Daytime or evening classes",
+      "help": "Whether the student attends daytime or evening classes.",
+      "stage": 0,
+      "section": "Application and prior education",
+      "sensitive": false,
+      "type": "binary",
+      "options": [
+        {
+          "value": 0,
+          "label": "Evening",
+          "verified": true
+        },
+        {
+          "value": 1,
+          "label": "Daytime",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Previous qualification",
+      "label": "Previous qualification",
+      "help": "The highest level of education the student had before starting this course.",
+      "stage": 0,
+      "section": "Application and prior education",
+      "sensitive": false,
+      "type": "categorical",
+      "options": [
+        {
+          "value": 1,
+          "label": "Secondary education",
+          "verified": true
+        },
+        {
+          "value": 2,
+          "label": "Higher education - bachelor's degree",
+          "verified": true
+        },
+        {
+          "value": 3,
+          "label": "Higher education - degree",
+          "verified": true
+        },
+        {
+          "value": 4,
+          "label": "Higher education - master's",
+          "verified": true
+        },
+        {
+          "value": 5,
+          "label": "Higher education - doctorate",
+          "verified": true
+        },
+        {
+          "value": 6,
+          "label": "Frequency of higher education",
+          "verified": true
+        },
+        {
+          "value": 9,
+          "label": "12th year of schooling - not completed",
+          "verified": true
+        },
+        {
+          "value": 10,
+          "label": "11th year of schooling - not completed",
+          "verified": true
+        },
+        {
+          "value": 12,
+          "label": "Other - 11th year of schooling",
+          "verified": true
+        },
+        {
+          "value": 14,
+          "label": "10th year of schooling",
+          "verified": true
+        },
+        {
+          "value": 15,
+          "label": "10th year of schooling - not completed",
+          "verified": true
+        },
+        {
+          "value": 19,
+          "label": "Basic education 3rd cycle (9th/10th/11th year) or equiv.",
+          "verified": true
+        },
+        {
+          "value": 38,
+          "label": "Basic education 2nd cycle (6th/7th/8th year) or equiv.",
+          "verified": true
+        },
+        {
+          "value": 39,
+          "label": "Technological specialization course",
+          "verified": true
+        },
+        {
+          "value": 40,
+          "label": "Higher education - degree (1st cycle)",
+          "verified": true
+        },
+        {
+          "value": 42,
+          "label": "Professional higher technical course",
+          "verified": true
+        },
+        {
+          "value": 43,
+          "label": "Higher education - master (2nd cycle)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Previous qualification (grade)",
+      "label": "Grade of previous qualification",
+      "help": "Final grade of the previous qualification, on a 0-200 scale.",
+      "stage": 0,
+      "section": "Application and prior education",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 95.0,
+      "max": 190.0,
+      "median": 133.1,
+      "integer": false,
+      "step": 0.1
+    },
+    {
+      "name": "Nationality",
+      "label": "Nationality",
+      "help": "The student's nationality.",
+      "stage": 0,
+      "section": "Personal",
+      "sensitive": true,
+      "type": "categorical",
+      "options": [
+        {
+          "value": 1,
+          "label": "Portuguese",
+          "verified": true
+        },
+        {
+          "value": 2,
+          "label": "German",
+          "verified": true
+        },
+        {
+          "value": 6,
+          "label": "Spanish",
+          "verified": true
+        },
+        {
+          "value": 11,
+          "label": "Italian",
+          "verified": true
+        },
+        {
+          "value": 13,
+          "label": "Dutch",
+          "verified": true
+        },
+        {
+          "value": 14,
+          "label": "English",
+          "verified": true
+        },
+        {
+          "value": 17,
+          "label": "Lithuanian",
+          "verified": true
+        },
+        {
+          "value": 21,
+          "label": "Angolan",
+          "verified": true
+        },
+        {
+          "value": 22,
+          "label": "Cape Verdean",
+          "verified": true
+        },
+        {
+          "value": 24,
+          "label": "Guinean",
+          "verified": true
+        },
+        {
+          "value": 25,
+          "label": "Mozambican",
+          "verified": true
+        },
+        {
+          "value": 26,
+          "label": "Santomean",
+          "verified": true
+        },
+        {
+          "value": 32,
+          "label": "Turkish",
+          "verified": true
+        },
+        {
+          "value": 41,
+          "label": "Brazilian",
+          "verified": true
+        },
+        {
+          "value": 62,
+          "label": "Romanian",
+          "verified": true
+        },
+        {
+          "value": 100,
+          "label": "Moldova (Republic of)",
+          "verified": true
+        },
+        {
+          "value": 101,
+          "label": "Mexican",
+          "verified": true
+        },
+        {
+          "value": 103,
+          "label": "Ukrainian",
+          "verified": true
+        },
+        {
+          "value": 105,
+          "label": "Russian",
+          "verified": true
+        },
+        {
+          "value": 108,
+          "label": "Cuban",
+          "verified": true
+        },
+        {
+          "value": 109,
+          "label": "Colombian",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Mother's qualification",
+      "label": "Mother's education",
+      "help": "The highest level of education the student's mother completed.",
+      "stage": 0,
+      "section": "Family",
+      "sensitive": false,
+      "type": "categorical",
+      "options": [
+        {
+          "value": 1,
+          "label": "Secondary Education - 12th Year of Schooling or Eq.",
+          "verified": true
+        },
+        {
+          "value": 2,
+          "label": "Higher Education - Bachelor's Degree",
+          "verified": true
+        },
+        {
+          "value": 3,
+          "label": "Higher Education - Degree",
+          "verified": true
+        },
+        {
+          "value": 4,
+          "label": "Higher Education - Master's",
+          "verified": true
+        },
+        {
+          "value": 5,
+          "label": "Higher Education - Doctorate",
+          "verified": true
+        },
+        {
+          "value": 6,
+          "label": "Frequency of Higher Education",
+          "verified": true
+        },
+        {
+          "value": 9,
+          "label": "12th Year of Schooling - Not Completed",
+          "verified": true
+        },
+        {
+          "value": 10,
+          "label": "11th Year of Schooling - Not Completed",
+          "verified": true
+        },
+        {
+          "value": 11,
+          "label": "7th Year (Old)",
+          "verified": true
+        },
+        {
+          "value": 12,
+          "label": "Other - 11th Year of Schooling",
+          "verified": true
+        },
+        {
+          "value": 14,
+          "label": "10th Year of Schooling",
+          "verified": true
+        },
+        {
+          "value": 18,
+          "label": "General commerce course",
+          "verified": true
+        },
+        {
+          "value": 19,
+          "label": "Basic Education 3rd Cycle (9th/10th/11th Year) or Equiv.",
+          "verified": true
+        },
+        {
+          "value": 22,
+          "label": "Technical-professional course",
+          "verified": true
+        },
+        {
+          "value": 26,
+          "label": "7th year of schooling",
+          "verified": true
+        },
+        {
+          "value": 27,
+          "label": "2nd cycle of the general high school course",
+          "verified": true
+        },
+        {
+          "value": 29,
+          "label": "9th Year of Schooling - Not Completed",
+          "verified": true
+        },
+        {
+          "value": 30,
+          "label": "8th year of schooling",
+          "verified": true
+        },
+        {
+          "value": 34,
+          "label": "Unknown",
+          "verified": true
+        },
+        {
+          "value": 35,
+          "label": "Can't read or write",
+          "verified": true
+        },
+        {
+          "value": 36,
+          "label": "Can read without having a 4th year of schooling",
+          "verified": true
+        },
+        {
+          "value": 37,
+          "label": "Basic education 1st cycle (4th/5th year) or equiv.",
+          "verified": true
+        },
+        {
+          "value": 38,
+          "label": "Basic Education 2nd Cycle (6th/7th/8th Year) or Equiv.",
+          "verified": true
+        },
+        {
+          "value": 39,
+          "label": "Technological specialization course",
+          "verified": true
+        },
+        {
+          "value": 40,
+          "label": "Higher education - degree (1st cycle)",
+          "verified": true
+        },
+        {
+          "value": 41,
+          "label": "Specialized higher studies course",
+          "verified": true
+        },
+        {
+          "value": 42,
+          "label": "Professional higher technical course",
+          "verified": true
+        },
+        {
+          "value": 43,
+          "label": "Higher Education - Master (2nd cycle)",
+          "verified": true
+        },
+        {
+          "value": 44,
+          "label": "Higher Education - Doctorate (3rd cycle)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Father's qualification",
+      "label": "Father's education",
+      "help": "The highest level of education the student's father completed.",
+      "stage": 0,
+      "section": "Family",
+      "sensitive": false,
+      "type": "categorical",
+      "options": [
+        {
+          "value": 1,
+          "label": "Secondary Education - 12th Year of Schooling or Eq.",
+          "verified": true
+        },
+        {
+          "value": 2,
+          "label": "Higher Education - Bachelor's Degree",
+          "verified": true
+        },
+        {
+          "value": 3,
+          "label": "Higher Education - Degree",
+          "verified": true
+        },
+        {
+          "value": 4,
+          "label": "Higher Education - Master's",
+          "verified": true
+        },
+        {
+          "value": 5,
+          "label": "Higher Education - Doctorate",
+          "verified": true
+        },
+        {
+          "value": 6,
+          "label": "Frequency of Higher Education",
+          "verified": true
+        },
+        {
+          "value": 9,
+          "label": "12th Year of Schooling - Not Completed",
+          "verified": true
+        },
+        {
+          "value": 10,
+          "label": "11th Year of Schooling - Not Completed",
+          "verified": true
+        },
+        {
+          "value": 11,
+          "label": "7th Year (Old)",
+          "verified": true
+        },
+        {
+          "value": 12,
+          "label": "Other - 11th Year of Schooling",
+          "verified": true
+        },
+        {
+          "value": 13,
+          "label": "2nd year complementary high school course",
+          "verified": true
+        },
+        {
+          "value": 14,
+          "label": "10th Year of Schooling",
+          "verified": true
+        },
+        {
+          "value": 18,
+          "label": "General commerce course",
+          "verified": true
+        },
+        {
+          "value": 19,
+          "label": "Basic Education 3rd Cycle (9th/10th/11th Year) or Equiv.",
+          "verified": true
+        },
+        {
+          "value": 20,
+          "label": "Complementary High School Course",
+          "verified": true
+        },
+        {
+          "value": 22,
+          "label": "Technical-professional course",
+          "verified": true
+        },
+        {
+          "value": 25,
+          "label": "Complementary High School Course - not concluded",
+          "verified": true
+        },
+        {
+          "value": 26,
+          "label": "7th year of schooling",
+          "verified": true
+        },
+        {
+          "value": 27,
+          "label": "2nd cycle of the general high school course",
+          "verified": true
+        },
+        {
+          "value": 29,
+          "label": "9th Year of Schooling - Not Completed",
+          "verified": true
+        },
+        {
+          "value": 30,
+          "label": "8th year of schooling",
+          "verified": true
+        },
+        {
+          "value": 31,
+          "label": "General Course of Administration and Commerce",
+          "verified": true
+        },
+        {
+          "value": 33,
+          "label": "Supplementary Accounting and Administration",
+          "verified": true
+        },
+        {
+          "value": 34,
+          "label": "Unknown",
+          "verified": true
+        },
+        {
+          "value": 35,
+          "label": "Can't read or write",
+          "verified": true
+        },
+        {
+          "value": 36,
+          "label": "Can read without having a 4th year of schooling",
+          "verified": true
+        },
+        {
+          "value": 37,
+          "label": "Basic education 1st cycle (4th/5th year) or equiv.",
+          "verified": true
+        },
+        {
+          "value": 38,
+          "label": "Basic Education 2nd Cycle (6th/7th/8th Year) or Equiv.",
+          "verified": true
+        },
+        {
+          "value": 39,
+          "label": "Technological specialization course",
+          "verified": true
+        },
+        {
+          "value": 40,
+          "label": "Higher education - degree (1st cycle)",
+          "verified": true
+        },
+        {
+          "value": 41,
+          "label": "Specialized higher studies course",
+          "verified": true
+        },
+        {
+          "value": 42,
+          "label": "Professional higher technical course",
+          "verified": true
+        },
+        {
+          "value": 43,
+          "label": "Higher Education - Master (2nd cycle)",
+          "verified": true
+        },
+        {
+          "value": 44,
+          "label": "Higher Education - Doctorate (3rd cycle)",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Mother's occupation",
+      "label": "Mother's occupation",
+      "help": "The occupation group of the student's mother.",
+      "stage": 0,
+      "section": "Family",
+      "sensitive": false,
+      "type": "categorical",
+      "options": [
+        {
+          "value": 0,
+          "label": "Student",
+          "verified": true
+        },
+        {
+          "value": 1,
+          "label": "Representatives of the Legislative Power and Executive Bodies, Directors, Directors and Executive Managers",
+          "verified": true
+        },
+        {
+          "value": 2,
+          "label": "Specialists in Intellectual and Scientific Activities",
+          "verified": true
+        },
+        {
+          "value": 3,
+          "label": "Intermediate Level Technicians and Professions",
+          "verified": true
+        },
+        {
+          "value": 4,
+          "label": "Administrative staff",
+          "verified": true
+        },
+        {
+          "value": 5,
+          "label": "Personal Services, Security and Safety Workers and Sellers",
+          "verified": true
+        },
+        {
+          "value": 6,
+          "label": "Farmers and Skilled Workers in Agriculture, Fisheries and Forestry",
+          "verified": true
+        },
+        {
+          "value": 7,
+          "label": "Skilled Workers in Industry, Construction and Craftsmen",
+          "verified": true
+        },
+        {
+          "value": 8,
+          "label": "Installation and Machine Operators and Assembly Workers",
+          "verified": true
+        },
+        {
+          "value": 9,
+          "label": "Unskilled Workers",
+          "verified": true
+        },
+        {
+          "value": 10,
+          "label": "Armed Forces Professions",
+          "verified": true
+        },
+        {
+          "value": 90,
+          "label": "Other Situation",
+          "verified": true
+        },
+        {
+          "value": 99,
+          "label": "(blank)",
+          "verified": true
+        },
+        {
+          "value": 122,
+          "label": "Health professionals",
+          "verified": true
+        },
+        {
+          "value": 123,
+          "label": "Teachers",
+          "verified": true
+        },
+        {
+          "value": 125,
+          "label": "Specialists in information and communication technologies (ICT)",
+          "verified": true
+        },
+        {
+          "value": 131,
+          "label": "Intermediate level science and engineering technicians and professions",
+          "verified": true
+        },
+        {
+          "value": 132,
+          "label": "Technicians and professionals, of intermediate level of health",
+          "verified": true
+        },
+        {
+          "value": 134,
+          "label": "Intermediate level technicians from legal, social, sports, cultural and similar services",
+          "verified": true
+        },
+        {
+          "value": 141,
+          "label": "Office workers, secretaries in general and data processing operators",
+          "verified": true
+        },
+        {
+          "value": 143,
+          "label": "Data, accounting, statistical, financial services and registry-related operators",
+          "verified": true
+        },
+        {
+          "value": 144,
+          "label": "Other administrative support staff",
+          "verified": true
+        },
+        {
+          "value": 151,
+          "label": "Personal service workers",
+          "verified": true
+        },
+        {
+          "value": 152,
+          "label": "Sellers",
+          "verified": true
+        },
+        {
+          "value": 153,
+          "label": "Personal care workers and the like",
+          "verified": true
+        },
+        {
+          "value": 171,
+          "label": "Skilled construction workers and the like, except electricians",
+          "verified": true
+        },
+        {
+          "value": 173,
+          "label": "Skilled workers in printing, precision instrument manufacturing, jewelers, artisans and the like",
+          "verified": true
+        },
+        {
+          "value": 175,
+          "label": "Workers in food processing, woodworking, clothing and other industries and crafts",
+          "verified": true
+        },
+        {
+          "value": 191,
+          "label": "Cleaning workers",
+          "verified": true
+        },
+        {
+          "value": 192,
+          "label": "Unskilled workers in agriculture, animal production, fisheries and forestry",
+          "verified": true
+        },
+        {
+          "value": 193,
+          "label": "Unskilled workers in extractive industry, construction, manufacturing and transport",
+          "verified": true
+        },
+        {
+          "value": 194,
+          "label": "Meal preparation assistants",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Father's occupation",
+      "label": "Father's occupation",
+      "help": "The occupation group of the student's father.",
+      "stage": 0,
+      "section": "Family",
+      "sensitive": false,
+      "type": "categorical",
+      "options": [
+        {
+          "value": 0,
+          "label": "Student",
+          "verified": true
+        },
+        {
+          "value": 1,
+          "label": "Representatives of the Legislative Power and Executive Bodies, Directors, Directors and Executive Managers",
+          "verified": true
+        },
+        {
+          "value": 2,
+          "label": "Specialists in Intellectual and Scientific Activities",
+          "verified": true
+        },
+        {
+          "value": 3,
+          "label": "Intermediate Level Technicians and Professions",
+          "verified": true
+        },
+        {
+          "value": 4,
+          "label": "Administrative staff",
+          "verified": true
+        },
+        {
+          "value": 5,
+          "label": "Personal Services, Security and Safety Workers and Sellers",
+          "verified": true
+        },
+        {
+          "value": 6,
+          "label": "Farmers and Skilled Workers in Agriculture, Fisheries and Forestry",
+          "verified": true
+        },
+        {
+          "value": 7,
+          "label": "Skilled Workers in Industry, Construction and Craftsmen",
+          "verified": true
+        },
+        {
+          "value": 8,
+          "label": "Installation and Machine Operators and Assembly Workers",
+          "verified": true
+        },
+        {
+          "value": 9,
+          "label": "Unskilled Workers",
+          "verified": true
+        },
+        {
+          "value": 10,
+          "label": "Armed Forces Professions",
+          "verified": true
+        },
+        {
+          "value": 90,
+          "label": "Other Situation",
+          "verified": true
+        },
+        {
+          "value": 99,
+          "label": "(blank)",
+          "verified": true
+        },
+        {
+          "value": 101,
+          "label": "Armed Forces Officers",
+          "verified": true
+        },
+        {
+          "value": 102,
+          "label": "Armed Forces Sergeants",
+          "verified": true
+        },
+        {
+          "value": 103,
+          "label": "Other Armed Forces personnel",
+          "verified": true
+        },
+        {
+          "value": 112,
+          "label": "Directors of administrative and commercial services",
+          "verified": true
+        },
+        {
+          "value": 114,
+          "label": "Hotel, catering, trade and other services directors",
+          "verified": true
+        },
+        {
+          "value": 121,
+          "label": "Specialists in the physical sciences, mathematics, engineering and related techniques",
+          "verified": true
+        },
+        {
+          "value": 122,
+          "label": "Health professionals",
+          "verified": true
+        },
+        {
+          "value": 123,
+          "label": "Teachers",
+          "verified": true
+        },
+        {
+          "value": 124,
+          "label": "Specialists in finance, accounting, administrative organization, public and commercial relations",
+          "verified": true
+        },
+        {
+          "value": 131,
+          "label": "Intermediate level science and engineering technicians and professions",
+          "verified": true
+        },
+        {
+          "value": 132,
+          "label": "Technicians and professionals, of intermediate level of health",
+          "verified": true
+        },
+        {
+          "value": 134,
+          "label": "Intermediate level technicians from legal, social, sports, cultural and similar services",
+          "verified": true
+        },
+        {
+          "value": 135,
+          "label": "Information and communication technology technicians",
+          "verified": true
+        },
+        {
+          "value": 141,
+          "label": "Office workers, secretaries in general and data processing operators",
+          "verified": true
+        },
+        {
+          "value": 143,
+          "label": "Data, accounting, statistical, financial services and registry-related operators",
+          "verified": true
+        },
+        {
+          "value": 144,
+          "label": "Other administrative support staff",
+          "verified": true
+        },
+        {
+          "value": 151,
+          "label": "Personal service workers",
+          "verified": true
+        },
+        {
+          "value": 152,
+          "label": "Sellers",
+          "verified": true
+        },
+        {
+          "value": 153,
+          "label": "Personal care workers and the like",
+          "verified": true
+        },
+        {
+          "value": 154,
+          "label": "Protection and security services personnel",
+          "verified": true
+        },
+        {
+          "value": 161,
+          "label": "Market-oriented farmers and skilled agricultural and animal production workers",
+          "verified": true
+        },
+        {
+          "value": 163,
+          "label": "Farmers, livestock keepers, fishermen, hunters and gatherers, subsistence",
+          "verified": true
+        },
+        {
+          "value": 171,
+          "label": "Skilled construction workers and the like, except electricians",
+          "verified": true
+        },
+        {
+          "value": 172,
+          "label": "Skilled workers in metallurgy, metalworking and similar",
+          "verified": true
+        },
+        {
+          "value": 174,
+          "label": "Skilled workers in electricity and electronics",
+          "verified": true
+        },
+        {
+          "value": 175,
+          "label": "Workers in food processing, woodworking, clothing and other industries and crafts",
+          "verified": true
+        },
+        {
+          "value": 181,
+          "label": "Fixed plant and machine operators",
+          "verified": true
+        },
+        {
+          "value": 182,
+          "label": "Assembly workers",
+          "verified": true
+        },
+        {
+          "value": 183,
+          "label": "Vehicle drivers and mobile equipment operators",
+          "verified": true
+        },
+        {
+          "value": 192,
+          "label": "Unskilled workers in agriculture, animal production, fisheries and forestry",
+          "verified": true
+        },
+        {
+          "value": 193,
+          "label": "Unskilled workers in extractive industry, construction, manufacturing and transport",
+          "verified": true
+        },
+        {
+          "value": 194,
+          "label": "Meal preparation assistants",
+          "verified": true
+        },
+        {
+          "value": 195,
+          "label": "Street vendors (except food) and street service providers",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Admission grade",
+      "label": "Admission grade",
+      "help": "The grade the student was admitted with, on a 0-200 scale.",
+      "stage": 0,
+      "section": "Application and prior education",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 95.0,
+      "max": 190.0,
+      "median": 126.1,
+      "integer": false,
+      "step": 0.1
+    },
+    {
+      "name": "Displaced",
+      "label": "Studies away from home",
+      "help": "Whether the student moved away from their home area to study.",
+      "stage": 0,
+      "section": "Personal",
+      "sensitive": false,
+      "type": "binary",
+      "options": [
+        {
+          "value": 0,
+          "label": "No",
+          "verified": true
+        },
+        {
+          "value": 1,
+          "label": "Yes",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Educational special needs",
+      "label": "Special educational needs",
+      "help": "Whether the student has special educational needs.",
+      "stage": 0,
+      "section": "Personal",
+      "sensitive": false,
+      "type": "binary",
+      "options": [
+        {
+          "value": 0,
+          "label": "No",
+          "verified": true
+        },
+        {
+          "value": 1,
+          "label": "Yes",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Debtor",
+      "label": "Owes money to the university",
+      "help": "Whether the student has unpaid debts to the institution.",
+      "stage": 1,
+      "section": "Finance",
+      "sensitive": false,
+      "type": "binary",
+      "options": [
+        {
+          "value": 0,
+          "label": "No",
+          "verified": true
+        },
+        {
+          "value": 1,
+          "label": "Yes",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Tuition fees up to date",
+      "label": "Tuition fees paid on time",
+      "help": "Whether the student's tuition fee payments are up to date.",
+      "stage": 1,
+      "section": "Finance",
+      "sensitive": false,
+      "type": "binary",
+      "options": [
+        {
+          "value": 0,
+          "label": "No",
+          "verified": true
+        },
+        {
+          "value": 1,
+          "label": "Yes",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Gender",
+      "label": "Gender",
+      "help": "The student's gender as recorded in the dataset.",
+      "stage": 0,
+      "section": "Personal",
+      "sensitive": true,
+      "type": "binary",
+      "options": [
+        {
+          "value": 0,
+          "label": "Female",
+          "verified": true
+        },
+        {
+          "value": 1,
+          "label": "Male",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Scholarship holder",
+      "label": "Has a scholarship",
+      "help": "Whether the student receives a scholarship.",
+      "stage": 0,
+      "section": "Finance",
+      "sensitive": false,
+      "type": "binary",
+      "options": [
+        {
+          "value": 0,
+          "label": "No",
+          "verified": true
+        },
+        {
+          "value": 1,
+          "label": "Yes",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Age at enrollment",
+      "label": "Age at enrollment",
+      "help": "The student's age in years when they enrolled.",
+      "stage": 0,
+      "section": "Personal",
+      "sensitive": true,
+      "type": "numeric",
+      "min": 17,
+      "max": 70,
+      "median": 20.0,
+      "integer": true,
+      "step": 1
+    },
+    {
+      "name": "International",
+      "label": "International student",
+      "help": "Whether the student is an international student.",
+      "stage": 0,
+      "section": "Personal",
+      "sensitive": true,
+      "type": "binary",
+      "options": [
+        {
+          "value": 0,
+          "label": "No",
+          "verified": true
+        },
+        {
+          "value": 1,
+          "label": "Yes",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "name": "Curricular units 1st sem (credited)",
+      "label": "Subjects credited (semester 1)",
+      "help": "Number of subjects (curricular units) credited from earlier studies, so the student did not have to take them in semester 1.",
+      "stage": 1,
+      "section": "Semester 1",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 0,
+      "max": 20,
+      "median": 0.0,
+      "integer": true,
+      "step": 1
+    },
+    {
+      "name": "Curricular units 1st sem (enrolled)",
+      "label": "Subjects enrolled (semester 1)",
+      "help": "Number of subjects (curricular units) the student signed up for in semester 1.",
+      "stage": 1,
+      "section": "Semester 1",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 0,
+      "max": 26,
+      "median": 6.0,
+      "integer": true,
+      "step": 1
+    },
+    {
+      "name": "Curricular units 1st sem (evaluations)",
+      "label": "Exams/assessments taken (semester 1)",
+      "help": "Number of assessments (exams, projects) the student sat in semester 1.",
+      "stage": 1,
+      "section": "Semester 1",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 0,
+      "max": 45,
+      "median": 8.0,
+      "integer": true,
+      "step": 1
+    },
+    {
+      "name": "Curricular units 1st sem (approved)",
+      "label": "Subjects passed (semester 1)",
+      "help": "Number of subjects (curricular units) the student passed in semester 1.",
+      "stage": 1,
+      "section": "Semester 1",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 0,
+      "max": 26,
+      "median": 5.0,
+      "integer": true,
+      "step": 1
+    },
+    {
+      "name": "Curricular units 1st sem (grade)",
+      "label": "Average grade (semester 1)",
+      "help": "The student's average grade on a 0-20 scale (0 if nothing was graded) in semester 1.",
+      "stage": 1,
+      "section": "Semester 1",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 0.0,
+      "max": 18.875,
+      "median": 12.285714285714286,
+      "integer": false,
+      "step": 0.01
+    },
+    {
+      "name": "Curricular units 1st sem (without evaluations)",
+      "label": "Subjects without assessment (semester 1)",
+      "help": "Number of subjects the student was enrolled in but never sat an assessment for in semester 1.",
+      "stage": 1,
+      "section": "Semester 1",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 0,
+      "max": 12,
+      "median": 0.0,
+      "integer": true,
+      "step": 1
+    },
+    {
+      "name": "Curricular units 2nd sem (credited)",
+      "label": "Subjects credited (semester 2)",
+      "help": "Number of subjects (curricular units) credited from earlier studies, so the student did not have to take them in semester 2.",
+      "stage": 2,
+      "section": "Semester 2",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 0,
+      "max": 19,
+      "median": 0.0,
+      "integer": true,
+      "step": 1
+    },
+    {
+      "name": "Curricular units 2nd sem (enrolled)",
+      "label": "Subjects enrolled (semester 2)",
+      "help": "Number of subjects (curricular units) the student signed up for in semester 2.",
+      "stage": 2,
+      "section": "Semester 2",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 0,
+      "max": 23,
+      "median": 6.0,
+      "integer": true,
+      "step": 1
+    },
+    {
+      "name": "Curricular units 2nd sem (evaluations)",
+      "label": "Exams/assessments taken (semester 2)",
+      "help": "Number of assessments (exams, projects) the student sat in semester 2.",
+      "stage": 2,
+      "section": "Semester 2",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 0,
+      "max": 33,
+      "median": 8.0,
+      "integer": true,
+      "step": 1
+    },
+    {
+      "name": "Curricular units 2nd sem (approved)",
+      "label": "Subjects passed (semester 2)",
+      "help": "Number of subjects (curricular units) the student passed in semester 2.",
+      "stage": 2,
+      "section": "Semester 2",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 0,
+      "max": 20,
+      "median": 5.0,
+      "integer": true,
+      "step": 1
+    },
+    {
+      "name": "Curricular units 2nd sem (grade)",
+      "label": "Average grade (semester 2)",
+      "help": "The student's average grade on a 0-20 scale (0 if nothing was graded) in semester 2.",
+      "stage": 2,
+      "section": "Semester 2",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 0.0,
+      "max": 18.571428571428573,
+      "median": 12.2,
+      "integer": false,
+      "step": 0.01
+    },
+    {
+      "name": "Curricular units 2nd sem (without evaluations)",
+      "label": "Subjects without assessment (semester 2)",
+      "help": "Number of subjects the student was enrolled in but never sat an assessment for in semester 2.",
+      "stage": 2,
+      "section": "Semester 2",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 0,
+      "max": 12,
+      "median": 0.0,
+      "integer": true,
+      "step": 1
+    },
+    {
+      "name": "Unemployment rate",
+      "label": "Unemployment rate (%)",
+      "help": "Unemployment rate (%), as provided in the dataset (an economic indicator, not about the student).",
+      "stage": 0,
+      "section": "Economy",
+      "sensitive": false,
+      "type": "numeric",
+      "min": 7.6,
+      "max": 16.2,
+      "median": 11.1,
+      "integer": false,
+      "step": 0.1
+    },
+    {
+      "name": "Inflation rate",
+      "label": "Inflation rate (%)",
+      "help": "Inflation rate (%), as provided in the dataset (an economic indicator, not about the student).",
+      "stage": 0,
+      "section": "Economy",
+      "sensitive": false,
+      "type": "numeric",
+      "min": -0.8,
+      "max": 3.7,
+      "median": 1.4,
+      "integer": false,
+      "step": 0.1
+    },
+    {
+      "name": "GDP",
+      "label": "GDP indicator",
+      "help": "GDP indicator as provided in the dataset (the official description just says 'GDP'; the values, -4.06 to 3.51, look like annual growth in %).",
+      "stage": 0,
+      "section": "Economy",
+      "sensitive": false,
+      "type": "numeric",
+      "min": -4.06,
+      "max": 3.51,
+      "median": 0.32,
+      "integer": false,
+      "step": 0.01
+    }
+  ],
+  "stages": [
+    {
+      "id": 0,
+      "key": "enrollment",
+      "label": "At enrollment",
+      "features": [
+        "Marital status",
+        "Application mode",
+        "Application order",
+        "Course",
+        "Daytime/evening attendance",
+        "Previous qualification",
+        "Previous qualification (grade)",
+        "Nationality",
+        "Mother's qualification",
+        "Father's qualification",
+        "Mother's occupation",
+        "Father's occupation",
+        "Admission grade",
+        "Displaced",
+        "Educational special needs",
+        "Gender",
+        "Scholarship holder",
+        "Age at enrollment",
+        "International",
+        "Unemployment rate",
+        "Inflation rate",
+        "GDP"
+      ],
+      "blind_features": [
+        "Marital status",
+        "Application mode",
+        "Application order",
+        "Course",
+        "Daytime/evening attendance",
+        "Previous qualification",
+        "Previous qualification (grade)",
+        "Mother's qualification",
+        "Father's qualification",
+        "Mother's occupation",
+        "Father's occupation",
+        "Admission grade",
+        "Displaced",
+        "Educational special needs",
+        "Scholarship holder",
+        "Unemployment rate",
+        "Inflation rate",
+        "GDP"
+      ]
+    },
+    {
+      "id": 1,
+      "key": "after_sem1",
+      "label": "After semester 1",
+      "features": [
+        "Marital status",
+        "Application mode",
+        "Application order",
+        "Course",
+        "Daytime/evening attendance",
+        "Previous qualification",
+        "Previous qualification (grade)",
+        "Nationality",
+        "Mother's qualification",
+        "Father's qualification",
+        "Mother's occupation",
+        "Father's occupation",
+        "Admission grade",
+        "Displaced",
+        "Educational special needs",
+        "Debtor",
+        "Tuition fees up to date",
+        "Gender",
+        "Scholarship holder",
+        "Age at enrollment",
+        "International",
+        "Curricular units 1st sem (credited)",
+        "Curricular units 1st sem (enrolled)",
+        "Curricular units 1st sem (evaluations)",
+        "Curricular units 1st sem (approved)",
+        "Curricular units 1st sem (grade)",
+        "Curricular units 1st sem (without evaluations)",
+        "Unemployment rate",
+        "Inflation rate",
+        "GDP"
+      ],
+      "blind_features": [
+        "Marital status",
+        "Application mode",
+        "Application order",
+        "Course",
+        "Daytime/evening attendance",
+        "Previous qualification",
+        "Previous qualification (grade)",
+        "Mother's qualification",
+        "Father's qualification",
+        "Mother's occupation",
+        "Father's occupation",
+        "Admission grade",
+        "Displaced",
+        "Educational special needs",
+        "Debtor",
+        "Tuition fees up to date",
+        "Scholarship holder",
+        "Curricular units 1st sem (credited)",
+        "Curricular units 1st sem (enrolled)",
+        "Curricular units 1st sem (evaluations)",
+        "Curricular units 1st sem (approved)",
+        "Curricular units 1st sem (grade)",
+        "Curricular units 1st sem (without evaluations)",
+        "Unemployment rate",
+        "Inflation rate",
+        "GDP"
+      ]
+    },
+    {
+      "id": 2,
+      "key": "after_sem2",
+      "label": "After semester 2",
+      "features": [
+        "Marital status",
+        "Application mode",
+        "Application order",
+        "Course",
+        "Daytime/evening attendance",
+        "Previous qualification",
+        "Previous qualification (grade)",
+        "Nationality",
+        "Mother's qualification",
+        "Father's qualification",
+        "Mother's occupation",
+        "Father's occupation",
+        "Admission grade",
+        "Displaced",
+        "Educational special needs",
+        "Debtor",
+        "Tuition fees up to date",
+        "Gender",
+        "Scholarship holder",
+        "Age at enrollment",
+        "International",
+        "Curricular units 1st sem (credited)",
+        "Curricular units 1st sem (enrolled)",
+        "Curricular units 1st sem (evaluations)",
+        "Curricular units 1st sem (approved)",
+        "Curricular units 1st sem (grade)",
+        "Curricular units 1st sem (without evaluations)",
+        "Curricular units 2nd sem (credited)",
+        "Curricular units 2nd sem (enrolled)",
+        "Curricular units 2nd sem (evaluations)",
+        "Curricular units 2nd sem (approved)",
+        "Curricular units 2nd sem (grade)",
+        "Curricular units 2nd sem (without evaluations)",
+        "Unemployment rate",
+        "Inflation rate",
+        "GDP"
+      ],
+      "blind_features": [
+        "Marital status",
+        "Application mode",
+        "Application order",
+        "Course",
+        "Daytime/evening attendance",
+        "Previous qualification",
+        "Previous qualification (grade)",
+        "Mother's qualification",
+        "Father's qualification",
+        "Mother's occupation",
+        "Father's occupation",
+        "Admission grade",
+        "Displaced",
+        "Educational special needs",
+        "Debtor",
+        "Tuition fees up to date",
+        "Scholarship holder",
+        "Curricular units 1st sem (credited)",
+        "Curricular units 1st sem (enrolled)",
+        "Curricular units 1st sem (evaluations)",
+        "Curricular units 1st sem (approved)",
+        "Curricular units 1st sem (grade)",
+        "Curricular units 1st sem (without evaluations)",
+        "Curricular units 2nd sem (credited)",
+        "Curricular units 2nd sem (enrolled)",
+        "Curricular units 2nd sem (evaluations)",
+        "Curricular units 2nd sem (approved)",
+        "Curricular units 2nd sem (grade)",
+        "Curricular units 2nd sem (without evaluations)",
+        "Unemployment rate",
+        "Inflation rate",
+        "GDP"
+      ]
+    }
+  ],
+  "classes": [
+    "Dropout",
+    "Enrolled",
+    "Graduate"
+  ],
+  "sensitive_features": [
+    "Age at enrollment",
+    "Gender",
+    "Nationality",
+    "International"
+  ],
+  "label_source": "https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success",
+  "label_source_retrieved": "2026-11-14",
+  "label_todo": []
+}

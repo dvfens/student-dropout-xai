@@ -1,0 +1,111 @@
+{
+  "stages": {
+    "0": {
+      "aware": {
+        "holdout": {
+          "accuracy": 0.5988700564971752,
+          "macro_f1": 0.4914441507053759,
+          "dropout_auc": 0.7637271214642264
+        },
+        "oof": {
+          "accuracy": 0.6175406871609403,
+          "macro_f1": 0.5075053620802767,
+          "dropout_auc": 0.7738896102724392,
+          "recall_top30": 0.5594651653764954,
+          "precision_top30": 0.5990957045968349
+        },
+        "flag_threshold": 0.42273343503475175,
+        "n_features": 22
+      },
+      "blind": {
+        "holdout": {
+          "accuracy": 0.5864406779661017,
+          "macro_f1": 0.478033687818465,
+          "dropout_auc": 0.748605610367697
+        },
+        "oof": {
+          "accuracy": 0.608499095840868,
+          "macro_f1": 0.5025676710087534,
+          "dropout_auc": 0.7653139729142544,
+          "recall_top30": 0.5432793807178043,
+          "precision_top30": 0.5817633760361718
+        },
+        "flag_threshold": 0.417357462644577,
+        "n_features": 18
+      }
+    },
+    "1": {
+      "aware": {
+        "holdout": {
+          "accuracy": 0.735593220338983,
+          "macro_f1": 0.6557342866407628,
+          "dropout_auc": 0.8985142134002014
+        },
+        "oof": {
+          "accuracy": 0.7509041591320073,
+          "macro_f1": 0.6700223576976604,
+          "dropout_auc": 0.9050131196506989,
+          "recall_top30": 0.7417311752287121,
+          "precision_top30": 0.7942727957799548
+        },
+        "flag_threshold": 0.42354351878166197,
+        "n_features": 30
+      },
+      "blind": {
+        "holdout": {
+          "accuracy": 0.727683615819209,
+          "macro_f1": 0.6426719021779145,
+          "dropout_auc": 0.8971725527876075
+        },
+        "oof": {
+          "accuracy": 0.7484177215189873,
+          "macro_f1": 0.6658857685148875,
+          "dropout_auc": 0.9045788834669904,
+          "recall_top30": 0.7361013370865588,
+          "precision_top30": 0.7882441597588545
+        },
+        "flag_threshold": 0.4217165678739548,
+        "n_features": 26
+      }
+    },
+    "2": {
+      "aware": {
+        "holdout": {
+          "accuracy": 0.7728813559322034,
+          "macro_f1": 0.7093372411113551,
+          "dropout_auc": 0.9187270042886269
+        },
+        "oof": {
+          "accuracy": 0.7796112115732369,
+          "macro_f1": 0.7083696566460729,
+          "dropout_auc": 0.9266159596912588,
+          "recall_top30": 0.7677691766361717,
+          "precision_top30": 0.8221552373775434
+        },
+        "flag_threshold": 0.4222137421369552,
+        "n_features": 36
+      },
+      "blind": {
+        "holdout": {
+          "accuracy": 0.7661016949152543,
+          "macro_f1": 0.697203223900257,
+          "dropout_auc": 0.9165768320404959
+        },
+        "oof": {
+          "accuracy": 0.7805153707052441,
+          "macro_f1": 0.7105769275057922,
+          "dropout_auc": 0.9254435454294707,
+          "recall_top30": 0.764954257565095,
+          "precision_top30": 0.8191409193669932
+        },
+        "flag_threshold": 0.4228677868843078,
+        "n_features": 32
+      }
+    }
+  },
+  "notes": {
+    "holdout": "Served model fit on the stratified 80% training split, evaluated on the 20% hold-out (885 students).",
+    "oof": "5-fold StratifiedKFold(shuffle=True, random_state=42) out-of-fold predictions for all 4,424 students (as in the notebook).",
+    "recall_top30": "Share of real dropouts among the 30% of students with the highest out-of-fold P(Dropout) ('dropouts caught')."
+  }
+}
