@@ -1,0 +1,17 @@
+# Backend dependencies (Python 3.13), pinned to the versions the artifacts were trained with.
+fastapi==0.162.7
+starlette==1.10.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.3
+numpy==2.5.4
+pandas==3.1.1
+scipy==1.18.1
+scikit-learn==1.9.1
+xgboost==3.4.1
+shap==0.54.1
+lime==0.2.0.1
+joblib==1.6.0
+matplotlib==3.11.2
+# tests
+pytest==9.2.0
+httpx==0.28.1
