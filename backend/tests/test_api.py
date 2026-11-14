@@ -17,7 +17,7 @@ import pytest
 warnings.filterwarnings("ignore", message=".*httpx.*")  # starlette's TestClient deprecation notice
 from fastapi.testclient import TestClient  # noqa: E402
 
-from backend.main import ARTIFACT_RESULTS, RESULT_TABLES, app  # noqa: E402
+from backend.main import ARTIFACT_RESULTS, FRONTEND_DIST, RESULT_TABLES, app  # noqa: E402
 
 STAGE_SIZES = {0: 22, 1: 30, 2: 36}
 SENSITIVE = {"Age at enrollment", "Gender", "Nationality", "International"}
@@ -253,3 +253,14 @@ def test_flag_matches_threshold_near_cutoff(client: TestClient, examples: dict[s
     assert j["dropout_percentile"] >= 70
     assert j["dropout_probability"] < j["flag_threshold"]
     assert j["flagged_at_risk"] is False
+
+
+@pytest.mark.skipif(not FRONTEND_DIST.is_dir(), reason="frontend not built (cd frontend && npm run build)")
+def test_frontend_served_behind_api_routes(client: TestClient) -> None:
+    page = {"Accept": "text/html"}
+    for path in ("/", "/predict", "/some/client/route"):  # client-side routes fall back to index.html
+        r = client.get(path, headers=page)
+        assert r.status_code == 200 and r.headers["content-type"].startswith("text/html")
+    assert client.get("/api/health", headers=page).json()["status"] == "ok"  # API routes win
+    r = client.get("/api/unknown", headers={"Accept": "application/json"})  # API calls never get index.html
+    assert r.status_code == 404 and "text/html" not in r.headers.get("content-type", "")

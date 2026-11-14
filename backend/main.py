@@ -35,6 +35,7 @@ ARTIFACTS = ROOT / "artifacts"
 MODELS_DIR = ARTIFACTS / "models"
 FIGURES = ROOT / "figures"
 DATA_CSV = ROOT / "data.csv"
+FRONTEND_DIST = ROOT / "frontend" / "dist"  # `npm run build` output, served at / when present
 
 TOP_SHAP = 8
 LIME_FEATURES = 10
@@ -203,6 +204,10 @@ app.add_middleware(
 )
 if FIGURES.is_dir():
     app.mount("/static/figures", StaticFiles(directory=FIGURES), name="figures")
+# The built React app, on the same origin as the API (this is how the Vercel deployment serves it).
+# API routes always take priority; other browser page loads fall back to index.html for client-side routing.
+if FRONTEND_DIST.is_dir():
+    app.frontend("/", directory=FRONTEND_DIST)
 
 
 @app.exception_handler(RequestValidationError)

@@ -1,0 +1,31 @@
+# Vercel deployment manifest: one Vercel project runs the FastAPI backend and serves the built React
+# frontend from the same URL (see "Deploy on Vercel" in README.md). Only runtime packages are listed so the
+# function stays under Vercel's 500 MB bundle limit. Local development uses backend/requirements.txt.
+[project]
+name = "student-dropout-xai"
+version = "1.0.0"
+description = "Student dropout XAI: FastAPI + XGBoost + SHAP + LIME backend with a React frontend"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "fastapi==0.162.7",
+    "starlette==1.10.0",
+    "pydantic==2.14.3",
+    "numpy==2.5.4",
+    "pandas==3.1.1",
+    "scipy==1.18.1",
+    "scikit-learn==1.9.1",
+    # Same `xgboost` package and version. On Linux the CPU-only build is used because the default one
+    # bundles GPU (CUDA/NCCL) libraries that would push the function past the bundle limit.
+    "xgboost-cpu==3.4.1; sys_platform == 'linux'",
+    "xgboost==3.4.1; sys_platform != 'linux'",
+    "shap==0.54.1",
+    "lime==0.2.0.1",
+    "joblib==1.6.0",
+]
+
+[tool.vercel]
+entrypoint = "backend.main:app"
+
+[tool.vercel.fastapi.static]
+# Serve the frontend and /static/figures from the CDN even though the app has CORS middleware.
+cdn = true

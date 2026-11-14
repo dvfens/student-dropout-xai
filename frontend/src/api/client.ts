@@ -1,8 +1,13 @@
 import type { ValidationIssue } from './types';
 
-/** API base URL without trailing slash. Configure with VITE_API_URL. */
+/**
+ * API base URL without trailing slash. Configure with VITE_API_URL.
+ * Default: http://localhost:8000 under `npm run dev`; the page's own origin ("") in production builds,
+ * where the FastAPI app serves the built frontend itself (Vercel, or uvicorn after `npm run build`).
+ */
 export const API_BASE: string = (
-  (import.meta.env.VITE_API_URL as string | undefined) ?? 'http://localhost:8000'
+  (import.meta.env.VITE_API_URL as string | undefined) ??
+  (import.meta.env.DEV ? 'http://localhost:8000' : '')
 ).replace(/\/+$/, '');
 
 /** Generic HTTP failure (non-2xx, network error, invalid JSON). */
@@ -109,7 +114,7 @@ export async function fetchJson<T>(path: string, init?: RequestInit): Promise<T>
   } catch (err) {
     if (err instanceof DOMException && err.name === 'AbortError') throw err;
     throw new ApiError(
-      `Cannot reach the API at ${API_BASE}. Is the backend running?`,
+      `Cannot reach the API at ${API_BASE || window.location.origin}. Is the backend running?`,
       0,
     );
   }

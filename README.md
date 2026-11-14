@@ -64,9 +64,29 @@ Then open http://localhost:5173. The port is strict: if 5173 is already in use, 
 instead of quietly moving to another port. Free the port, or start Vite on another one with
 `npx vite --port 5174`. The backend accepts any localhost port.
 
-- API address: `VITE_API_URL` (default `http://localhost:8000`), e.g. `VITE_API_URL=http://localhost:9000 npm run dev`.
-- Production build: `npm run build` (output in `frontend/dist`). Preview it with `npm run preview` (http://localhost:4173).
+- API address: `VITE_API_URL`, e.g. `VITE_API_URL=http://localhost:9000 npm run dev`. Without it, `npm run dev`
+  uses `http://localhost:8000` and a production build calls the API on its own origin.
+- Production build: `npm run build` (output in `frontend/dist`). Preview it with `npm run preview` (http://localhost:4173),
+  which forwards `/api` and `/static` to the backend on port 8000. Once `frontend/dist` exists, the backend also
+  serves the built app itself at http://localhost:8000, the same way the Vercel deployment does.
 - Type check: `npm run typecheck`.
+
+## Deploy on Vercel
+
+One Vercel project serves both parts from one URL: the FastAPI app runs as a Python function and also serves the
+built React app, so the frontend calls the API on its own origin (no CORS setup, no API URL to configure).
+
+- `pyproject.toml` (repository root) lists the runtime packages Vercel installs (Python 3.13) and points Vercel at
+  `backend.main:app`. On Linux it installs `xgboost-cpu`, the same `xgboost` package without the GPU libraries,
+  which keeps the function at roughly 400 MB, under Vercel's 500 MB limit. Keep its versions in step with
+  `backend/requirements.txt`.
+- `vercel.json` builds the frontend (`npm ci && npm run build` in `frontend/`) and leaves tests, docs, the notebook
+  and `node_modules` out of the function.
+
+To deploy, import the GitHub repository at https://vercel.com/new with the **Root Directory left at the repository
+root** (`./`); Vercel detects FastAPI. No environment variables are needed. Every push to `main` then redeploys.
+Don't deploy `backend/` or `frontend/` as separate projects: the backend reads `artifacts/`, `figures/` and the CSV
+files from the repository root, and a frontend deployed alone has no API.
 
 ## Modelling notes
 
@@ -124,4 +144,5 @@ artifacts/   models (*.joblib), feature_metadata.json, model_metrics.json, examp
 figures/     notebook PNGs and LIME HTML, served at /static/figures
 docs/        SPEC.md (original request), CONTRACT.md (API contract), DEVIATIONS.md, RUN.md
 *.csv        notebook result tables, served at /api/results/tables/{name}
+pyproject.toml, vercel.json   Vercel deployment (see "Deploy on Vercel")
 ```

@@ -73,7 +73,7 @@ export default function ExplainabilityPage() {
 
 | Export | Description |
 | --- | --- |
-| `API_BASE` | `import.meta.env.VITE_API_URL` or `http://localhost:8000`, no trailing slash. |
+| `API_BASE` | `import.meta.env.VITE_API_URL`, else `http://localhost:8000` in dev and the page's own origin (`""`) in production builds; no trailing slash. |
 | `fetchJson<T>(path, init?)` | GET/any JSON request relative to `API_BASE`. Throws `ValidationError` on 422, `ApiError` otherwise (status 0 = network down). |
 | `postJson<T>(path, body)` | POST JSON. |
 | `ApiError` | `{ message, status, body }`. |
